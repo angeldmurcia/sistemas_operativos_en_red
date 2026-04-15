@@ -1,0 +1,10 @@
+Prac T6.3: Instalación de webmin
+Sube un PDF mostrando los pasos para instalar Webmin en la VM servidor.
+
+Posteriormente muestra como te conectas a la interfaz web de Webmin y el estado de tu servidor.
+
+Puedes seguir las instrucciones de SomEbooks para realizar esta práctica, o la documentación oficial de webmin al respecto.
+
+http://somebooks.es/instala-webmin-y-administra-ubuntu-20-04-desde-el-navegador/
+
+https://webmin.com/download/

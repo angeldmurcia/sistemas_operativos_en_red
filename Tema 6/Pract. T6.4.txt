@@ -1,0 +1,11 @@
+Prac T6.4: Administración del sistema con Webmin
+Sube un PDF realizando las siguientes actividades en Webmin.
+
+    Muestra la configuración de red del sistema.
+    Actualiza los paquetes del sistema.
+    Instala el paquete Vim.
+    Muestra el log del sistema.
+    Muestra los procesos en ejecución.
+    Muestra la configuración de inicio de servicios al arranque, específicamente la de Webmin.
+    Muestra la configuración de tareas programadas en el sistema.
+    Reinicia el sistema.

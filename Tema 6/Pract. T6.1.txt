@@ -1,0 +1,13 @@
+Prac T6.1: administración del sistema ubuntu 24
+
+Presenta un PDF mostrando los pasos para poder realizar las siguientes tareas de administración sobre dos máquinas virtuales ya instaladas con la distribución Ubuntu 24.04 Server y Desktop:
+
+    Actualización de paquetes del sistema.
+    Configuración de la red (utiliza direcciones en la red 192.168.0.0/24).
+    Habilitar el usuario root para poder realizar login.
+
+Adicionalmente deberás mostrar como instalar y configurar OpenSSH server en la VM servidor para que pueda recibir conexiones al usuario root.
+
+Aunque está descrito para el Ubuntu 22.04, puedes seguir las instrucciones de SomEbooks para hacer lo mismo en Ubuntu 24.
+
+http://somebooks.es/capitulo-8-instalacion-de-ubuntu-14-04-lts/6/

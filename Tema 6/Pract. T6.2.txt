@@ -1,0 +1,13 @@
+Prac T6.2: Tasksel
+
+Presenta un PDF mostrando los pasos para poder realizar las siguientes tareas de administración sobre Ubuntu 24.04 Server:
+
+    Instalación de taskel.
+    Utilizar tasksel para para instalar y posteriormente desinstalar webserver.
+    Utilizar tasksel para instalar interfaz gráfica en el servidor.
+
+Recomiendo que realicen un snapshot previo a realizar este ejercicio, para poder revertir la máquina a su estado previo tras su finalización.
+
+Aunque está descrito para el Ubuntu 20.04, puedes seguir las instrucciones de SomEbooks para hacer lo mismo en Ubuntu 24.
+
+https://somebooks.es/capitulo-8-instalacion-de-ubuntu-14-04-lts/7/
