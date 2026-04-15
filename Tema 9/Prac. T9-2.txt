@@ -1,0 +1,28 @@
+Prac T9-2: Perfiles móviles
+
+Presenta una memoria en PDF mostrando los siguientes pasos:
+
+    Configura el controlador de dominio para habilitar los perfiles móviles.
+
+    Haz una copia de tu máquina virtual de Windows 10.
+
+    Cambia el nombre de la máquina virtual por Cliente02 y saca la máquina del dominio y únela a un grupo de trabajo.
+
+    Cambia la dirección ip de la máquina virtual por la siguiente:
+
+        IP:192.168.0.102
+
+        Máscara: 255.255.255.0
+
+        Puerta de enlace: 192.168.0.1
+
+        DNS: Pon el necesario para poder unir esta máquina al dominio del servidor Linux.
+    Une el equipo Cliente02 al dominio.
+
+    Apaga la máquina Cliente02.
+
+    Arranca la máquina Windows 10 Cliente01 e inicia sesión con el usuario user01. Cambia el fondo de escritorio. Añade un icono de acceso directo en el escritorio a la calculadora. Añade un documento en Mis documentos que se llame como tú.
+
+    Apaga la máquina Windows 10 Cliente01.
+
+    Arranca la máquina Windows 10 Cliente02, inicia sesión con el usuario user01 y comprueba que tiene el mismo perfil que el usuario que trabajó en la otra máquina Windows 10.

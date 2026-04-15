@@ -1,0 +1,35 @@
+Prac T9-1: Unir windows 10 al dominio
+
+Entrega un dossier en PDF de los pasos realizados.
+
+
+En primer lugar deberás configurar la red del servidor de dominio linux para que tenga la IP estática 192.168.0.10 (y su correspondientes máscara y gateway y DNS). Además deberás configurar su interfaz de red dentro de una red NAT de Virtual Box, a la que también uniras la máquina cliente Windows 10 que prepararemos posteriormente.
+
+
+1.- Pon a tu máquina Windows 10, el nombre Cliente01.
+
+2.- Configura la ip de tu máquina Windows 10 para que sea
+
+    Configura la tarjeta de red de Windows 10 para que esté en bridge y tenga la siguiente dirección ip: 192.168.0.101.
+
+    Máscara: 255.255.255.0.
+
+    Puerta de enlace: 192.168.0.1.
+
+    Pon como DNS primario la dirección ip del servidor de dominio linux.
+
+5.- Configura en el servidor de dominio lo siguiente:
+
+    Crea una cuenta de administrador llamada admin.
+
+    Crea un grupo que se llame informatica.
+
+    Crea una cuenta de usuario llamado user01.
+
+    Añade el usuario que acabas de crear al grupo informatica.
+
+    Crea una carpeta compartida a la que tenga acceso el grupo informática, llamada datos.
+
+8.- Une la máquina Windows 10 al dominio usando el usuario admin.
+
+10.- Entra desde Windows 10 al dominio con el usuario user01. Comprueba que tienes acceso a la carpeta compartida "datos".

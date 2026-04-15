@@ -1,0 +1,74 @@
+**Guía para Crear un Perfil Móvil y Obligatorio en un Cliente Windows Usando Zentyal**
+
+---
+
+### 1. Configurar el Servidor Zentyal
+Antes de configurar el perfil móvil u obligatorio en el cliente, asegúrate de que:
+- Zentyal está configurado como **Controlador de Dominio (PDC)**.
+- Tienes un usuario creado en **Usuarios y Equipos** de Zentyal.
+- El cliente Windows está unido al dominio.
+
+---
+
+### 2. Configurar la Ruta del Perfil Móvil en Zentyal
+1. Accede a la interfaz web de Zentyal.
+2. Ve a **Dominio → Usuarios y Equipos → Usuarios**.
+3. Selecciona el usuario al que deseas asignar el perfil móvil.
+4. En la sección **Perfil**, busca **Ruta del perfil**.
+5. Introduce la ruta donde se almacenará el perfil. Por ejemplo:
+   ```
+   \\zentyal\profiles\%USERNAME%
+   ```
+6. Guarda los cambios.
+
+---
+
+### 3. Crear la Carpeta Compartida para los Perfiles
+1. En Zentyal, ve a **Archivos → Comparticiones**.
+2. Crea una nueva carpeta llamada **profiles** en `/home/samba/profiles`.
+3. Asegúrate de que los permisos sean adecuados:
+   ```bash
+   sudo chmod 1777 /home/samba/profiles
+   sudo chown Administrator:"domain users" /home/samba/profiles
+   ```
+4. En la configuración de la compartición de la carpeta **profiles**, habilita el acceso para los usuarios del dominio.
+
+---
+
+### 4. Configurar el Cliente Windows
+1. Asegúrate de que el equipo está unido al dominio.
+2. Inicia sesión con el usuario configurado en Zentyal.
+3. Windows detectará el perfil móvil y guardará la configuración en la ruta definida (`\\zentyal\profiles\usuario`).
+4. Prueba cerrando sesión e iniciando en otro equipo del dominio para verificar que el perfil se carga correctamente.
+
+---
+
+### 5. Configurar un Perfil Obligatorio
+Si deseas que el perfil sea obligatorio y no pueda modificarse:
+1. En la carpeta de perfiles (`/home/samba/profiles`), cambia el nombre del perfil del usuario a `NTUSER.MAN` en lugar de `NTUSER.DAT`:
+   ```bash
+   mv /home/samba/profiles/usuario/NTUSER.DAT /home/samba/profiles/usuario/NTUSER.MAN
+   ```
+2. Asegúrate de que la carpeta del perfil tenga permisos de solo lectura:
+   ```bash
+   chmod -R 755 /home/samba/profiles/usuario
+   ```
+3. Verifica que el usuario pueda acceder al perfil, pero no modificarlo.
+
+---
+
+### Notas Importantes
+- Es recomendable que la carpeta **profiles** tenga permisos adecuados para que cada usuario solo pueda acceder a su perfil.
+- Si los perfiles no se sincronizan, revisa los registros en `/var/log/samba/` y usa el comando:
+  ```bash
+  testparm
+  ```
+- Puedes comprobar la conexión de los clientes con:
+  ```bash
+  wbinfo -u
+  ```
+
+---
+
+Si encuentras algún error o necesitas más detalles, revisa los logs de Samba y verifica la configuración del dominio. ¡Éxito en la implementación! 🚀
+

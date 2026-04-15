@@ -1,0 +1,14 @@
+Prac T9-3: Perfiles obligatorios
+
+Presenta una memoria en PDF mostrando los siguientes pasos:
+
+
+    Modifica el perfil del usuario alumno para que sea obligatorio.
+
+    Arranca la máquina Windows 10 Cliente01 e inicia sesión con el usuario alumno. Comprueba que tiene un perfil obligatorio.
+
+    Cambia el fondo de escritorio. Añade un icono de acceso directo en el escritorio al navegador de Windows. Añade un documento en Mis documentos que se llame SOR.
+
+    Apaga la máquina Windows 10 Cliente01.
+
+    Arranca la máquina Windows 10 Cliente Cliente01, inicia sesión con el usuario alumno y comprueba que los cambios realizados en el ejercicio 3 no están.
