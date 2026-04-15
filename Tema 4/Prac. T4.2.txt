@@ -1,0 +1,11 @@
+Prac T4.2: segunda máquina en el dominio
+
+    Haced una copia de vuestra máquina Windows 10. Entrad en la segunda máquina Windows 10 con el usuario administrador y sácala del dominio.
+    Cambia el nombre de tu segunda máquina Windows 10 para que se llame Cliente2XX donde XX es tu número de lista.
+    Configura la dirección IP de la segunda máquina Windows 10 de la siguiente forma:
+        IP: 192.168.44.YY donde YY es el tu número de lista + 50 (por ejemplo el alumno 3 tendrá la dirección IP será 192.168.44.53) 
+        Máscara de red: 255.255.255.0
+        Puerta de enlace: 192.168.44.1
+        DNS: dirección ip de tu servidor
+        DNS secundario: 192.168.44.1
+    Une la segunda máquina Windows 10 al dominio que creaste.

@@ -1,0 +1,35 @@
+Prac T4.3: compartir recursos
+
+1. Comparte recursos:
+
+    Crea en la unidad C: del equipo servidor una carpeta para cada uno de los departamentos de la empresa PEQUE S.A. Las carpetas se llamarán: DATOS-CONTABILIDAD, DATOS-ALMACEN, DATOS-MANTENIMIENTO y DATOS-DIRECCION.
+
+    Comparte estas carpetas con los siguientes permisos: Para cada carpeta creada en el apartado anterior, los usuarios de cada departamento tendrán todos los permisos sobre la carpeta de su departamento. Ejemplo: La carpeta DATOS-CONTABILIDAD será compartida con los siguientes permisos: El grupo CONTABILIDAD tendrá permiso de lectura y escritura sobre la carpeta DATOS-CONTABILIDAD.
+
+    Dentro de las carpetas creadas para cada departamento, crea una subcarpeta para cada usuario de ese departamento. Cada subcarpeta tendrá el nombre del usuario del departamento. Ejemplo: Dentro de la carpeta del departamento Contabilidad (DATOS-CONTABILIDAD) crearemos las subcarpetas: userconta01, userconta02, userconta15, userconta16, userconta17 y userconta30.
+
+    Compartid las carpetas creadas en el apartado anterior con los siguientes permisos:
+
+        Para las carpetas de los usuarios de CONTABILIDAD, ALMACEN y MANTENIMIENTO: Cada usuario tendrá todos los permisos sobre la carpeta que se llame como él. El último usuario del departamento (el jefe) tendrá permiso de SOLO lectura sobre las carpetas de todos los trabajadores de su departamento. El grupo dirección tendrá todos los permisos sobre las carpetas de todos los usuarios de los departamentos especificados.
+
+        Para las carpetas de los usuarios de DIRECCION: Cada usuario de este departamento, tendrá todos los permisos sólo sobre la carpeta que se llame como él.
+
+    Entrad en la primera máquina Windows 10, llamada Cliente1XX con el usuario administrador del dominio y crear una carpeta llamada WIN10-XX-local en la unidad C (donde XX es vuestro número de lista)
+
+    Compartid esta carpeta especificando los siguientes permisos: Los usuarios locales del equipo tendrán todos los permisos sobre la carpeta y el administrador del dominio también tendrá todos los permisos sobre la carpeta.
+
+2. Comprobación de acceso a recursos compartidos
+
+    Inicia sesión desde el ordenador Cliente1XX (Windows 10), con el primer usuario de Contabilidad “userconta01” y comprueba que puedes crear, modificar y borrar carpetas dentro de la carpeta DATOS-CONTABILIDAD pero que no puedes hacer lo mismo en las otras carpetas del resto de departamentos (DATOS-ALMACEN, DATOS-MANTENIMIENTO y DATOS-DIRECCION).
+
+    Con este mismo usuario, comprueba que, dentro de su carpeta particular, este usuario puede hacer cualquier cosa, pero que no puede ver el resto de carpetas de los usuarios de su departamento.
+
+    Desde el servidor, comprueba si tienes acceso a la carpeta local compartida por la máquina cliente (Windows 10- Cliente1XX), es decir, si hay acceso a la carpeta WIN10-XX-LOCAL de los clientes del dominio.
+
+    Inicia sesión desde el ordenador Cliente1XX, con el último usuario de Contabilidad “userconta30” y comprueba que puedes crear, modificar y borrar carpetas dentro de la carpeta DATOS-CONTABILIDAD pero que no puedes hacer lo mismo en las carpetas de los usuarios de otros departamentos.
+
+    Con este mismo usuario, comprueba que, dentro de su carpeta particular, este usuario pueda hacer cualquier cosa, y que pueda ver el resto de carpetas de los usuarios de su departamento.
+
+    Inicia sesión con el primer usuario del Departamento de Dirección y comprueba que este usuario tenga acceso a todos los recursos compartidos (carpetas de los departamentos y carpetas de cada usuario) para crear, mover, cambiar nombre de carpetas, etc, pero que no pueda operar sobre otras carpetas de los usuarios de su departamento.
+
+    Inicia sesión como Administrador del dominio y comprueba que tengas acceso total a todos los recursos de la red.

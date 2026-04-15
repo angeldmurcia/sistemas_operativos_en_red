@@ -1,0 +1,38 @@
+Prac T4.4: gestión de impresoras
+
+
+    Gestión de impresoras en controladores de dominio. Respecto de las impresoras en el dominio, realizaremos las siguientes operaciones:
+
+        Instalaremos la impresora HP color Laserjet 4550 PS Class Driver de las que incorpora Windows Server en el controlador de dominio. La instalaremos en local por LPT1.
+
+        La estableceremos como predeterminada y la daremos a compartir en el controlador de dominio.
+
+        Una vez instalada la impresora, indicaremos que el tipo de papel que va a imprimir es A5 y la calidad de impresión óptima.
+
+        Indicaremos que la impresora debe aparecer en la lista del directorio para posteriormente poder trabajar con ella desde los clientes.
+
+        Las horas a las que estará disponible la impresora serán desde las 8 de la mañana hasta las 11 de la noche.
+
+        Crearemos un grupo de usuarios llamado impresora.
+
+        A este grupo de usuarios añadiremos todos los usuarios de nuestra empresa.
+
+        Otorgaremos privilegios de impresión a los usuarios de este grupo.
+
+        Los usuarios del departamento de mantenimiento, además de imprimir, pdrán administrar las impresoras.
+
+        Por último, indicaremos que el administrador del dominio pueda imprimir, administrar impresoras y administrar documento.
+
+        Al resto de usuarios y grupos que no hemos creado nosotros, se les retirarán todos los permisos sobre la impresora, excepto al administrador local y grupo de administradores del dominio. Dejamos también al usuario Creator Owner.
+
+        Instalaremos esta impresora en los dos clientes Windows 10, e indicaremos que los usuarios locales del equipo no tengan acceso a la impresora del dominio.
+
+    Gestión de impresoras locales en clientes de un dominio.
+
+        Instalar localmente la impresora virtual PDFcreator (http://sourceforge.net/projects/pdfcreator/ ) en uno de los clientes Windows 10 y compartidla.
+
+        Indicar que todos los usuarios locales tendrán acceso total a esta impresora y que los usuarios globales del dominio solamente podrán imprimir, a excepción de los usuarios de dirección, que podrán administrar además los trabajos de impresión, y el administrador del dominio, que tendrá control total sobre la misma.
+
+        Comprobar que cada tipo de usuario puede realizar las tareas acordes con los premisos que tiene concedidos.
+
+        Instalar la impresora del cliente Windows 10 de la red, en el otro cliente Windows 10 de la red.

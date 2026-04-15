@@ -1,0 +1,42 @@
+Prac T4.1: Cliente Windows
+
+Entrega una memoria en PDF mostrando como realizas los siguientes pasos:
+
+
+    Crea una máquina virtual con las siguientes características:
+
+        Ram 2 Gb
+
+        Disco Duro 40 Gb
+
+        Configuración de red: Bridged
+
+        Instala Windows 10 con la ISO que te ha facilitado el profesor.
+
+    Arranca Windows 10, habilita al usuario Administrador y reinicia la máquina entrando con el usuario Administrador.
+
+    Configura la dirección IP de la máquina Windows 10 de la siguiente forma:
+
+        IP: 192.168.44.0xx donde XX es el número de lista (menos el primer alumno de la lista cuya dirección IP será 192.168.44.99)
+
+        Máscara de red: 255.255.255.0
+
+        Puerta de enlace: 192.168.44.1
+
+        DNS: dirección ip de tu servidor
+
+    Cambia el nombre de tu máquina Windows 10 para que se llame Cliente1XX donde XX es tu número de lista.
+
+    Une la máquina Windows 10 al dominio que creaste.
+
+    Inicia sesión en la máquina Windows 10 con los siguientes usuarios:
+
+        Con el administrador del dominio.
+
+        Con un usuario de cada uno de los departamentos de la empresa PEQUE S.A
+
+        Con el administrador local.
+
+        Crea un usuario local en Windows 10 llamado userlocal, e inicia sesión con ese usuario.
+
+    Accede a los perfiles locales que se han creado en la máquina Windows 10 tras haber entrado con todos los usuarios del ejercicio anterior.
