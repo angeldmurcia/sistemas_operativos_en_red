@@ -1,0 +1,2 @@
+Utiliza este enlace como documentación y presenta un PDF con el proceso de instalación completo y algunas pruebas básicas (introducir un equipo W10 en el dominio recién creado e iniciar sesión con un usuario también creado en el dominio.
+https://documentation.ubuntu.com/server/how-to/samba/provision-samba-ad-controller/
