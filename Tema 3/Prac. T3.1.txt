@@ -1,0 +1,43 @@
+Prepara y presenta una memoria en PDF documentando mediante imágenes y texto el proceso para completar los siguientes ejercicios. Para completar cada uno de los pasos consulten la documentación del libro de SOR, capítulo 8.
+
+https://somebooks.es/sistemas-operativos-red-2a-edicion/
+
+Ejercicio 1: Creación de unidades organizativas
+
+    Crea cuatro unidades organizativas dentro del dominio, llamadas:  alumnos, profesores, departamentos y grupos.
+
+
+Ejercicio 2: Creación de grupos
+
+    Crea tres grupos dentro de la unidad organizativa departamentos.
+
+    Los grupos se llamarán: Matematicas, Lengua e Informatica.
+
+
+Ejercicio 3: Eliminación de grupos
+
+    Elimina el grupo Lengua que has creado en la práctica 2.
+
+
+Ejercicio 4: Crear usuarios globales
+
+    Accede a la unidad organizativa alumnos y crea los siguientes usuarios: "1SMR01", "1SMR02", "2SMR01" y "2SMR02" que serán alumnos.
+
+    Accede a la unidad organizativa profesores y crea los siguientes usuarios: “Pedro”, “Juan Francisco” y “Francisco” que serán profesores.
+
+
+Ejercicio 5: Añadir usuarios a grupos
+
+    Accede a la unidad organizativa departamentos y añade a los profesores “Pedro”, “Juan Francisco” y “Francisco” al grupo Informática
+
+
+Ejercicio 6: Configurar las cuentas de usuario.
+
+    Configura las cuentas de usuario de los dos alumnos de primero para que sólo puedan entrar al sistema por las mañanas de 8 a 15 de Lunes a Viernes. Y para que el usuario se vea obligado a cambiar su contraseña nada más entrar.
+
+
+Ejercicio 7: Crea una plantilla de usuario.
+
+    Crea una plantilla de usuario llamada usu_tarde, configúrala para que los usuarios sólo puedan conectarse de 16 a 23 de Lunes a Viernes. Y para que el usuario se vea obligado a cambiar su contraseña nada más entrar.
+
+    Crea los siguientes usuarios utilizando la plantilla: “2SMRT01”, “2SMRT02” y “2SMRT03”.

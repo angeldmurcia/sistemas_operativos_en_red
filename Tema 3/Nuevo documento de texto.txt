@@ -1,0 +1,37 @@
+Ejecutar el script:
+
+    Abrir PowerShell como administrador:
+        Haz clic derecho en el menú Inicio.
+        Selecciona Windows PowerShell (Administrador).
+
+    Permitir la ejecución de scripts (si es necesario):
+
+    Ejecuta:
+
+    powershell
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+Navegar hasta el directorio del script:
+
+Usa cd para cambiar al directorio donde guardaste el script, por ejemplo:
+
+powershell
+
+cd C:\Users\TuUsuario\Desktop
+
+Ejecutar el script:
+
+powershell
+
+    .\CrearUsuariosAD.ps1
+
+    Verificación:
+        Asegúrate de que no haya errores durante la ejecución.
+        Verifica en Active Directory que se hayan creado las OUs, grupos, equipos y usuarios con las configuraciones correctas.
+
+Conclusión:
+
+La parte de los horarios en el script utiliza valores numéricos que representan patrones de bits para establecer las horas permitidas de inicio de sesión. Es crucial calcular correctamente estos valores para que las restricciones funcionen según lo esperado.
+
+Si tienes más preguntas o necesitas ayuda adicional, no dudes en consultarme.

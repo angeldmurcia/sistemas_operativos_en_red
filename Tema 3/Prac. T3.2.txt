@@ -1,0 +1,71 @@
+Prac. T3.2: Preparación de usuarios, grupos y clientes en AD
+
+Practica T3.2
+
+Presenta una memoria en PDF describiendo los pasos (mediante texto e imágenes) mostrando la instalación y configuración completa de un controlador de dominio con los siguientes datos:
+
+    El nombre del equipo instalado con Windows 2016 Server será 2016ServXX siendo XX el número que tienes en la lista.
+    El nombre del usuario que iniciará sesión en el equipo es Administrador.
+    Cada controlador de dominio se llama dominioXX.com, donde XX será el número que tienes en la lista.
+    La configuración de red para cada equipo es:
+        Dirección IP: 192.168.44.2XX, donde XX es tu número de lista.
+        Máscara de subred: 255.255.255.0
+        Puerta de enlace: 192.168.44.1
+        DNS principal: 192.168.44.1
+
+Deberemos tener en cuenta la infrastructura actual de la empresa PEQUE S.A. en cuanto an úmero de usuarios y departamentos.
+
+    Contabilidad. Habrá quince equipos, que serán utilizados por 30 usuarios: quince en turno de mañana y quince en turno de tarde.
+    Almacén. Contará con quince ordenadores utilizados por 45 usuarios, divididos en tres turnos: mañana, tarde y noche.
+    Mantenimiento. Quince ordenadores utilizados por quince usuarios sin que tengan asignado ningún turno en concreto.
+    Dirección. Dos equipos de tipo servidor utilizados por los cinco directivos de PEQUE S.A.
+
+A continuación:
+
+    Crea 4 unidades organizativas con los siguientes nombres: Contabilidad, Mantenimiento, Almacen y Direccion (sin tildes).
+
+    Crea los siguientes grupos de usuarios dentro de cada unidad organizativa: contabilidad, almacen, mantenimiento y direccion. Contabilidad, almacen y mantenimiento tienen ámbito local y direccion tiene ámbito global.
+
+    Crea dentro de cada unidad organizativa los equipos de cada departamento, teniendo en cuenta que los equipos deberán tener los siguientes nombres:
+
+        Equipos de contabilidad: equipocontaYY (YY irá de 1 a 15)
+
+        Equipos de almacen: equipoalmaYY (YY irá de 1 a 15)
+
+        Equipos de mantenimiento: equipomanteYY (YY irá de 1 a 15)
+
+        Equipos de dirección: equipodirecYY (YY irá de 1 a 2)
+
+    Crea dentro de cada unidad organizativa, las plantillas necesarias para crear los usuarios indicados en el enunciado. Teniendo en cuenta los siguientes aspectos:
+
+        Cada usuario debe pertenecer al grupo de su departamento (los usuarios de contabilidad pertenecerán al grupo contabilidad)
+
+        Los usuarios de direccion pertenecerán a los cuatro grupos (contabilidad, mantenimiento, almacen y direccion)
+
+        Cada usuario sólo se podrá conectar desde los equipos de su departamento.
+
+        Cada usuario sólo se podrá conectar en el turno indicado, sabiendo que hay tres turnos:
+
+            Mañana: 8:00 - 15:00
+
+            Tarde: 15:00 - 23:00
+
+            Noche: 23:00 - 8:00
+
+        Se obligará a los usuarios a cambiar su contraseña en el siguiente inicio de sesión.
+
+    Una vez revisadas las plantillas por tu profesor, pasa a crear los usuarios de cada departamento.
+
+        Contabilidad-Mañana: userconta01...userconta15
+
+        Contabilidad-Tarde: userconta16....userconta30
+
+        Almacen-Mañana: useralma01....useralma15
+
+        Almacen-Tarde: useralma16...useralma30
+
+        Almacen-Noche: useralma31....useralma45
+
+        Mantenimiento: usermante01.....usermante15
+
+        Direccion: userdire01....userdire05
