@@ -1,0 +1,13 @@
+Ampliación T2: Instalación de IIS y FTP
+Actividad de ampliación de conocimientos
+
+
+En esta actividad de ampliación de conocimientos, buscaremos una guía de instalación de IIS (internet information services) para windows 2016 server y del servidor de FTP que IIS nos ofrece y documentaremos toda la instalación con pantallazos y comentarios.
+
+Configuraremos el servidor de FTP en nuestro servidor windows 2016 virtualizado, de tal forma que:
+
+    Utilice la carpeta C:/ftp en nuestro disco
+    Utilizar la IP configurada en el servidor
+    Aceptar conexiones anónimas, de tal forma que el usuario anónimo pueda leer y escribir en nuestro servidor
+
+Posteriormente mostraremos el proceso de conectarnos al servidor FTP utilizando el explorador de archivos de windows, tanto desde el servidor como desde nuestro PC. En ambos casos subiremos un fichero de tamaño medio/grande (más de 500MB) de tal forma que nos de tiempo a monitorizar la velocidad de subida del archivo, comprobando la velocidad máxima que hemos conseguido (capturar pantallazos demostrando dicha velocidad). Aprovecharemos también para mostrar las sesiones activas del servidor FTP desde el panel de administración de IIS.

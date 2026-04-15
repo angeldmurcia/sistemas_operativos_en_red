@@ -1,0 +1,31 @@
+1.- Tras reiniciar tu equipo, entra al sistema con el usuario Administrador y realiza la siguiente configuración de tu equipo Windows 2016 server.
+
+    Cambia el nombre de la tu máquina por 2016SERVxx donde xx es tu número de lista.
+
+    Cambiad la configuración de la tarjeta de red de vuestra máquina virtual, a Bridge.
+
+    Configura la red de tu equipo de la siguiente forma:
+
+        Dirección IP: 192.168.44.2XX, siendo XX tu número de lista.
+
+        Máscara de subred: 255.255.255.0
+
+        Puerta de enlace: 192.168.44.1
+
+        DNS principal:192.168.44.1
+
+        DNS secundario: 8.8.8.8
+
+2.- Instala el rol de Servicios de dominio del directorio activo
+
+3.- Promociona tu equipo servidor para convertirlo en un controlador de dominio. Cada controlador de dominio se llamará: dominioXX.com, siendo XX tu número de lista.
+
+4.- Comprueba si el procedimiento de instalación es correcto y asegúrate de que no se pueden dar de alta usuarios locales en el equipo.
+
+5.- Crea un snapshot.
+
+6.- Elimina el controlador de dominio que acabas de crear en el apartado 3. Desinstala los servicios de dominio del directorio activo. Une el equipo a un grupo de trabajo.
+
+7.- Devuelve el equipo al estado en el que se encontraba al crear el snapshot.
+
+https://somebooks.es/sistemas-operativos-red-2a-edicion/
